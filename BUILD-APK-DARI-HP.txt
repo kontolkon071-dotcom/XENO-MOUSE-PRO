@@ -1,0 +1,15 @@
+CARA BUILD APK DARI HP ANDROID (TANPA ANDROID STUDIO)
+
+1. Ekstrak ZIP ini di HP.
+2. Buka https://github.com dan masuk/buat akun.
+3. Buat repository baru bernama XENO-MOUSE-PRO. Pilih Public atau Private, lalu Create repository.
+4. Upload seluruh ISI folder XENO_MOUSE_PRO_v1_source ke repository (termasuk folder tersembunyi .github/workflows). Jika uploader HP tidak menampilkan folder .github, gunakan menu Add file > Create new file dan buat file .github/workflows/android-apk.yml, lalu salin isi file workflow dari ZIP.
+5. Buka tab Actions pada repository. Jika diminta, izinkan GitHub Actions.
+6. Pilih workflow "Build XENO Mouse Pro APK" lalu tekan Run workflow.
+7. Tunggu sampai proses selesai dengan tanda hijau. Buka hasil run, cari bagian Artifacts, lalu unduh XENO-MOUSE-PRO-debug-apk.
+8. Ekstrak hasil unduhan; file app-debug.apk dapat dipasang di Android. Android mungkin meminta izin memasang aplikasi dari sumber tersebut.
+
+CATATAN:
+- GitHub Actions membutuhkan akun GitHub dan koneksi internet. Batas penggunaan gratis bergantung pada jenis repository dan kuota akun.
+- APK ini adalah prototipe UI. Slider dan tombol tertentu masih tampilan contoh; belum mengendalikan input game, akses Root/ADB/Shizuku, atau merekam layar.
+- Jangan unggah password, token, atau data pribadi ke repository.
